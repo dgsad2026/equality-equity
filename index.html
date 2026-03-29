@@ -132,6 +132,7 @@
         /* --- SCALE --- */
         #scale-container {
             overflow: visible;
+            transition: opacity 0.5s ease-out; /* Sharpened the transition speed */
         }
 
         #beam-group {
@@ -244,6 +245,7 @@
     </div>
 
     <main class="relative z-20">
+        <!-- 1. HERO -->
         <section id="sec-1" class="min-h-screen flex flex-col items-center justify-center p-8 scroll-section">
             <h1 class="text-4xl md:text-6xl font-bold tracking-widest text-center theme-text leading-tight opacity-0 translate-y-10 transition-all duration-1000 delay-300" id="hero-title">
                 EQUALITY<br>
@@ -258,10 +260,48 @@
                 DGS Radio Drama Showcase 2025 - 2026
             </p>
         </section>
+
+        <!-- 2. EQUALITY -->
+        <section id="sec-2" class="min-h-[70vh] flex items-center justify-end p-8 md:pr-24 scroll-section">
+            <div class="w-full md:w-1/2 flex flex-col items-start space-y-6">
+                <h2 class="text-4xl md:text-6xl font-bold theme-text transform transition-all duration-700 translate-x-10 italic opacity-0 sec-content">Equality</h2>
+                <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
+                <p class="text md:text-xl leading-relaxed theme-text max-w-lg text-justify transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content font-light">
+                    <strong>Equality</strong> refers to the right of different groups of people to have a similar social position and receive the same treatment.
+                    <br><br>
+                    In the 21st century, numerous forms of equality have emerged, including gender equality and advocacy for women, as well as racial equality. As we strive toward these goals, we believe in the power of theater to bridge gaps and foster understanding to create a community with improved awareness and increased acceptance between individuals.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. EQUITY -->
+        <section id="sec-3" class="min-h-[90vh] flex items-center justify-end p-8 md:pr-24 scroll-section">
+            <div class="w-full md:w-1/2 flex flex-col items-start space-y-6">
+                <h2 class="text-4xl md:text-6xl font-bold theme-text transform transition-all duration-700 translate-x-10 opacity-0 italic sec-content">Equity</h2>
+                <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
+                <p class="text md:text-xl leading-relaxed theme-text max-w-lg text-justify transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content font-light">
+                    <strong>Equity</strong> refers to the principle of being fair and just, adjusting for the imbalance.
+                    <br><br>
+                    From an education level, means ensuring that all students have access to the resources and opportunities they need to succeed, regardless of their backgrounds or circumstances. We can recognize and address systemic barriers that may affect marginalized groups and increase awareness to create a learning environment where every student has the chance to thrive, fostering not only academic success but also social and emotional growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT PROGRAM -->
+        <section id="aboutus" class="min-h-[80vh] md:min-h-[60vh] flex flex-col items-center justify-center p-8 scroll-section">
+            <div class="content-block sec-content opacity-0 translate-y-5 transition-all duration-1000">
+                <h3 class="nav-font text-[#d4af37] text-sm md:text tracking-[0.3em] uppercase mb-4">introduction to</h3>
+                <div class="gold-line sec-line scale-x-0 transition-transform duration-1000"></div>
+                <h2 class="text-3xl md:text-5xl font-bold italic mb-10 theme-text">AD Appreciation Program</h2>
+                <p class="text md:text-xl leading-relaxed font-light text-justify text-[#f7f2ee]/80 max-w-2xl mx-auto mb-12">
+                    During the year, our S5 students have participated in AD lessons to learn skills regarding voice acting, drama directing and producing, sound effects and design, makeup, and scene drawing. To put learnt knowledge into use, students are required to create a radio drama, and a variety of activities will be organized to appreciate the effort and dedication students have put in. These will include online voting for their radio drama, a special Drama Night event, and opportunities for exchanges with students from other secondary schools.</p>
+            </div>
+        </section>
         
-        <section id="voting-section" class="min-h-[30vh] md:min-h-[60vh] flex flex-col items-center justify-start pt-0 p-8 scroll-section">
+        <!-- 5. VOTING -->
+        <section id="voting-section" class="min-h-[60vh] flex flex-col items-center justify-start pt-0 p-8 scroll-section">
             <div id="countdown-container" class="mt-12 flex flex-col items-center opacity-0 translate-y-5 transition-all duration-700 delay-70 sec-content">
-                <p class="text-[#f7f2ee] tracking-[0.05em] text-center text-xl mb-4">Vote for your favourite Radio Drama by<br>8th May 2026 11:59 P.M.</p>
+                <p class="text-[#f7f2ee] tracking-[0.05em] text-center text-lg md:text-xl mb-4">Vote for your favourite Radio Drama by<br>8th May 2026 11:59 P.M.</p>
                 <p class="text-[#d4af37] tracking-[0.2em] text-sm uppercase mb-4">Voting Ends In</p>
                 <div class="flex justify-center space-x-6 md:space-x-10 text-[#f7f2ee] font-serif mb-8">
                     <div class="text-center">
@@ -283,42 +323,8 @@
                 </div>
                 <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="group relative px-8 py-3 border border-[#d4af37] text-[#d4af37] hover:text-[#00030a] overflow-hidden transition-colors duration-300 uppercase tracking-widest text-sm font-bold">
                     <span class="absolute inset-0 w-full h-full bg-[#d4af37] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-                    <span class="relative z-10">Cast Your Vote</span>
+                    <span class="relative white z-10">Cast Your Vote</span>
                 </a>
-            </div>
-        </section>
-
-        <section id="aboutus" class="min-h-[80vh] md:min-h-[60vh] flex flex-col items-center justify-center p-8 scroll-section">
-            <div class="content-block sec-content opacity-0 translate-y-5 transition-all duration-1000">
-                <h3 class="nav-font text-[#d4af37] text-sm md:text tracking-[0.3em] uppercase mb-4">introduction to</h3>
-                <div class="gold-line sec-line scale-x-0 transition-transform duration-1000"></div>
-                <h2 class="text-3xl md:text-5xl font-bold italic mb-10 theme-text">AD Appreciation Program</h2>
-                <p class="text-lg md:text-xl leading-relaxed font-light text-justify text-[#f7f2ee]/80 max-w-2xl mx-auto mb-12">
-                    During the year, our S5 students have participated in AD lessons to learn skills regarding voice acting, drama directing and producing, sound effects and design, makeup, and scene drawing. To put learnt knowledge into use, students are required to create a radio drama, and a variety of activities will be organized to appreciate the effort and dedication students have put in. These will include online voting for their radio drama, a special Drama Night event, and opportunities for exchanges with students from other secondary schools.</p>
-            </div>
-        </section>
-
-        <section id="sec-2" class="min-h-[70vh] flex items-center justify-end p-8 md:pr-24 scroll-section">
-            <div class="w-full md:w-1/2 flex flex-col items-start space-y-6">
-                <h2 class="text-4xl md:text-6xl font-bold theme-text transform transition-all duration-700 translate-x-10 italic opacity-0 sec-content">Equality</h2>
-                <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
-                <p class="text-lg md:text-xl leading-relaxed theme-text max-w-lg text-justify transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content font-light">
-                    <strong>Equality</strong> refers to the right of different groups of people to have a similar social position and receive the same treatment.
-                    <br><br>
-                    In the 21st century, numerous forms of equality have emerged, including gender equality and advocacy for women, as well as racial equality. As we strive toward these goals, we believe in the power of theater to bridge gaps and foster understanding to create a community with improved awareness and increased acceptance between individuals.
-                </p>
-            </div>
-        </section>
-
-        <section id="sec-3" class="min-h-[90vh] flex items-center justify-end p-8 md:pr-24 scroll-section">
-            <div class="w-full md:w-1/2 flex flex-col items-start space-y-6">
-                <h2 class="text-4xl md:text-6xl font-bold theme-text transform transition-all duration-700 translate-x-10 opacity-0 italic sec-content">Equity</h2>
-                <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
-                <p class="text-lg md:text-xl leading-relaxed theme-text max-w-lg text-justify transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content font-light">
-                    <strong>Equity</strong> refers to the principle of being fair and just, adjusting for the imbalance.
-                    <br><br>
-                    From an education level, means ensuring that all students have access to the resources and opportunities they need to succeed, regardless of their backgrounds or circumstances. We can recognize and address systemic barriers that may affect marginalized groups and increase awareness to create a learning environment where every student has the chance to thrive, fostering not only academic success but also social and emotional growth.
-                </p>
             </div>
         </section>
     </main>
@@ -348,45 +354,46 @@
                 const scrollPos = window.scrollY;
                 const windowHeight = window.innerHeight;
 
-                // curtain fade logic
-                const fadeDistance = windowHeight * 0.5; 
-                let opacityCurtain = 1 - (scrollPos / fadeDistance);
+                // Curtain fade logic
+                const curtainFadeDistance = windowHeight * 0.5; 
+                let opacityCurtain = 1 - (scrollPos / curtainFadeDistance);
                 if (opacityCurtain < 0) opacityCurtain = 0;
-                
                 leftCurtain.style.opacity = opacityCurtain;
                 rightCurtain.style.opacity = opacityCurtain;
 
-                // menu show logic
+                // Navbar hiding logic
                 if (scrollPos < 5) {
                     if (!mobileMenu.classList.contains('menu-open')) {
                         navbar.classList.remove('opacity-0', 'pointer-events-none');
                     }
-                    bgContainer.style.transform = 'translate(-50%, -50%) rotate(0deg)';
                 }
 
-                
-                // scale fade logic
                 const sec2 = document.getElementById('sec-2');
-                const sec3 = document.getElementById('sec-3');
-                const aboutUs = document.getElementById('aboutus'); 
+                const aboutUs = document.getElementById('aboutus');
 
                 const rect2 = sec2.getBoundingClientRect();
-                const rect3 = sec3.getBoundingClientRect();
                 const rectAbout = aboutUs.getBoundingClientRect();
 
                 let newOpacity = 0;
-                const startFade = windowHeight * 0.5;
-                const endFade = windowHeight * 0.2;
 
-                if (rect2.top > startFade) {
+                const fadeInTriggerStart = windowHeight * 0.5;
+                const fadeInTriggerEnd = windowHeight * 0.3;
+                
+                const fadeOutTriggerStart = windowHeight * 0.8;
+                const fadeOutTriggerEnd = windowHeight * 0.7;
+
+                if (rect2.top > fadeInTriggerStart) {
                     newOpacity = 0;
-                } else if (rect2.top < endFade || rect3.top < windowHeight) {
-                    newOpacity = 1;
+                } else if (rect2.top <= fadeInTriggerStart && rect2.top >= fadeInTriggerEnd) {
+                    newOpacity = 1 - ((rect2.top - fadeInTriggerEnd) / (fadeInTriggerStart - fadeInTriggerEnd));
+                } else if (rectAbout.top < fadeOutTriggerStart && rectAbout.top > fadeOutTriggerEnd) {
+                    newOpacity = (rectAbout.top - fadeOutTriggerEnd) / (fadeOutTriggerStart - fadeOutTriggerEnd);
+                } else if (rectAbout.top <= fadeOutTriggerEnd) {
+                    newOpacity = 0;
                 } else {
-                    newOpacity = 1 - ((rect2.top - endFade) / (startFade - endFade));
+                    newOpacity = 1;
                 }
 
-                if (scrollPos < 100) newOpacity = 0;
                 scaleContainer.style.opacity = newOpacity;
             });
 
@@ -427,8 +434,6 @@
                 
                 switch(id) {
                     case 'sec-1':
-                    case 'voting-section':
-                    case 'aboutus':
                         bgContainer.style.transform = 'translate(-50%, -50%) rotate(0deg)';
                         resetScale();
                         break;
@@ -437,6 +442,8 @@
                         setEqualityState();
                         break;
                     case 'sec-3':
+                    case 'aboutus':
+                    case 'voting-section':
                         bgContainer.style.transform = 'translate(-50%, -50%) rotate(135deg)';
                         setEquityState();
                         break;
