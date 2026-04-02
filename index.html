@@ -197,11 +197,10 @@
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 flex justify-center py-6 transition-opacity duration-500">
         <div class="hidden md:flex space-x-8 md:space-x-16">
             <a href="index.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-[#d4af37] pb-1">Home</a>
-            <a href="english.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">English Division</a>
-            <a href="chinese.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Chinese Division</a>
+            <a href="radioDrama.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Radio Drama</a>
             <a href="awards.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Awards</a>
-            <a href="dramanight.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Drama Night</a>
-            <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Vote Now</a>
+            <a href="dramaNight.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Drama Night</a>
+            <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Vote Now</a>
         </div>
 
         <div class="md:hidden absolute right-6 top-6">
@@ -220,11 +219,10 @@
             </svg>
         </button>
         <a href="index.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Home</a>
-        <a href="english.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">English Division</a>
-        <a href="chinese.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Chinese Division</a>
+        <a href="radioDrama.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Radio Drama</a>
         <a href="awards.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Awards</a>
-        <a href="dramanight.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Drama Night</a>
-        <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Vote Now</a>
+        <a href="dramaNight.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Drama Night</a>
+        <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Vote Now</a>
     </div>
 
     <div id="scale-container" class="fixed left-0 top-0 h-full w-full md:w-1/2 flex items-center justify-center pointer-events-none opacity-0 z-10">
@@ -316,7 +314,7 @@
                         <span class="text-[10px] md:text-xs uppercase tracking-widest opacity-60">Secs</span>
                     </div>
                 </div>
-                <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="group relative px-8 py-3 border border-[#d4af37] text-[#d4af37] hover:text-[#00030a] overflow-hidden transition-colors duration-300 uppercase tracking-widest text-sm font-bold">
+                <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="group relative px-8 py-3 border border-[#d4af37] text-[#d4af37] hover:text-[#00030a] overflow-hidden transition-colors duration-300 uppercase tracking-widest text-sm font-bold">
                     <span class="absolute inset-0 w-full h-full bg-[#d4af37] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                     <span class="relative white z-10">Cast Your Vote</span>
                 </a>
@@ -437,9 +435,15 @@
                         setEqualityState();
                         break;
                     case 'sec-3':
+                        bgContainer.style.transform = 'translate(-50%, -50%) rotate(90deg)';
+                        setEquityState();
+                        break;
                     case 'aboutus':
-                    case 'voting-section':
                         bgContainer.style.transform = 'translate(-50%, -50%) rotate(135deg)';
+                        setEquityState();
+                        break;
+                    case 'voting-section':
+                        bgContainer.style.transform = 'translate(-50%, -50%) rotate(180deg)';
                         setEquityState();
                         break;
                 }
