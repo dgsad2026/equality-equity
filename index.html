@@ -179,6 +179,14 @@
         .menu-open {
             transform: translateX(0) !important;
         }
+        
+        @keyframes star-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 5px #d4af37); }
+        }
+        .star-logo {
+            animation: star-pulse 3s infinite ease-in-out;
+        }
 
         /* VOTE BUTTON EFFECTS */
         .vote-btn-glow {
@@ -288,8 +296,14 @@
             </span><br>
                 EQUITY
             </h1>
-            <p class="mt-8 text md:text-xl theme-text max-w-md text-center opacity-0 transition-all duration-1000 delay-700" id="hero-sub">
-                DGS Radio Drama Showcase 2025 - 2026
+            <p class="mt-8 text md:text-xl theme-text subtitle-font max-w-2xl text-center opacity-0 transition-all duration-1000 delay-700 flex flex-wrap justify-center items-center gap-4" id="hero-sub">
+                <svg class="star-logo hidden md:block w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
+                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
+                </svg>
+                <span>DGS Radio Drama Showcase 2025 - 2026</span>
+                <svg class="star-logo hidden md:block w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
+                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
+                </svg>
             </p>
         </section>
 
