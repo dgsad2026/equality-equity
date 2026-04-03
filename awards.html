@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equality & Equity - Awards</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Alegreya Sans', 'Trebuchet MS', sans-serif;
             overflow-x: hidden;
             margin: 0;
             background-color: #00030a;
@@ -20,7 +22,7 @@
         }
 
         p {
-            font-family: 'Gill Sans', sans-serif;
+            font-family: 'Alegreya Sans', 'Trebuchet MS', sans-serif;
         }
 
         .theme-text {
@@ -159,6 +161,38 @@
             animation: star-pulse 3s infinite ease-in-out;
         }
 
+        /* VOTE BUTTON EFFECTS */
+        .vote-btn-glow {
+            animation: gold-glow 2s infinite alternate;
+        }
+
+        @keyframes gold-glow {
+            0% { 
+                box-shadow: 0 0 5px rgba(212,175,55,0.2), inset 0 0 5px rgba(212,175,55,0.1); 
+                text-shadow: 0 0 2px rgba(212,175,55,0.3); 
+            }
+            100% { 
+                box-shadow: 0 0 20px rgba(212,175,55,0.6), inset 0 0 10px rgba(212,175,55,0.2); 
+                text-shadow: 0 0 8px rgba(212,175,55,0.8); 
+            }
+        }
+
+        .shimmer-effect {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(212,175,55,0.4), transparent);
+            transform: skewX(-20deg);
+            animation: shimmer 2.5s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 200%; }
+        }
+
     </style>
 </head>
 <body>
@@ -170,12 +204,15 @@
     <div id="curtain-right" class="curtain"></div>
 
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 flex justify-center py-6 transition-opacity duration-500">
-        <div class="hidden md:flex space-x-8 md:space-x-16">
+        <div class="hidden md:flex space-x-8 md:space-x-16 items-center">
             <a href="index.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Home</a>
             <a href="radioDrama.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Radio Drama</a>
             <a href="awards.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-[#d4af37] pb-1">Awards</a>
             <a href="dramaNight.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Drama Night</a>
-            <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Vote Now</a>
+            <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="vote-btn-glow relative overflow-hidden border border-[#d4af37] px-5 py-2 text-[#d4af37] nav-font text-xs md:text-sm tracking-widest uppercase transition-all">
+                <span class="shimmer-effect"></span>
+                <span class="relative z-10 font-bold">Vote Now</span>
+            </a>
         </div>
 
         <div class="md:hidden absolute right-6 top-6">
@@ -197,7 +234,10 @@
         <a href="radioDrama.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Radio Drama</a>
         <a href="awards.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Awards</a>
         <a href="dramaNight.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Drama Night</a>
-        <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Vote Now</a>
+        <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="vote-btn-glow relative overflow-hidden border border-[#d4af37] px-8 py-3 text-[#d4af37] nav-font tracking-widest uppercase transition-all mt-4">
+            <span class="shimmer-effect"></span>
+            <span class="relative z-10 font-bold">Vote Now</span>
+        </a>
     </div>
 
     <div id="bg-container"></div>
@@ -232,7 +272,7 @@
                     <div class="w-28 h-28 mb-6 flex items-center justify-center">
                         <img src="assets/best_radio_drama.png" alt="Best Radio Drama" class="max-h-full" onerror="this.style.display='none'">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Radio Drama</h3>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Radio Drama</h3>
                 </div>
 
                 <!-- 2. Best Audio Effects -->
@@ -240,7 +280,7 @@
                     <div class="w-28 h-28 mb-6 flex items-center justify-center">
                         <img src="assets/best_audio_effects.png" alt="Best Audio Effects" class="max-h-full" onerror="this.style.display='none'">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Audio Effects</h3>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Audio Effects</h3>
                 </div>
 
                 <!-- 3. Best Visual Effects -->
@@ -248,7 +288,7 @@
                     <div class="w-28 h-28 mb-6 flex items-center justify-center">
                         <img src="assets/best_visual_effects.png" alt="Best Visual Effects" class="max-h-full" onerror="this.style.display='none'">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Visual Effects</h3>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Visual Effects</h3>
                 </div>
 
                 <!-- 4. Best Voice Acting -->
@@ -256,7 +296,7 @@
                     <div class="w-28 h-28 mb-6 flex items-center justify-center">
                         <img src="assets/best_voice_acting.png" alt="Best Voice Acting" class="max-h-full" onerror="this.style.display='none'">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Voice Acting</h3>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Voice Acting</h3>
                 </div>
 
                 <!-- 5. Best Script -->
@@ -264,7 +304,7 @@
                     <div class="w-28 h-28 mb-6 flex items-center justify-center">
                         <img src="assets/best_script.png" alt="Best Script" class="max-h-full" onerror="this.style.display='none'">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Script</h3>
+                    <h3 class="text-lg md:text-2xl font-bold text-[#d4af37] uppercase tracking-widest">Best Script</h3>
                 </div>
 
             </div>
@@ -273,10 +313,10 @@
         <!-- voting -->
         <section id="voting-section" class="min-h-[40vh] flex flex-col items-center justify-center p-8 scroll-section">
             <div id="countdown-container" class="flex flex-col items-center opacity-0 translate-y-5 transition-all duration-1000 delay-100 sec-content">
-                <p class="text-[#f7f2ee] tracking-[0.05em] text-center text md:text-xl mb-6">Nominate a radio drama for these awards!</p>
-                <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="group relative px-8 py-3 border border-[#d4af37] text-[#d4af37] hover:text-[#00030a] overflow-hidden transition-colors duration-300 uppercase tracking-widest text-sm font-bold">
-                    <span class="absolute inset-0 w-full h-full bg-[#d4af37] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-                    <span class="relative z-10">Cast Your Vote</span>
+                <p class="text-[#f7f2ee] tracking-[0.05em] text-center text md:text-xl mb-6 font-bold">Nominate a radio drama for these awards!</p>
+                <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="vote-btn-glow relative px-8 py-3 border border-[#d4af37] text-[#d4af37] overflow-hidden transition-all duration-300 uppercase tracking-widest text-sm font-bold">
+                    <span class="shimmer-effect"></span>
+                    <span class="nav-font relative z-10">Cast Your Vote</span>
                 </a>
             </div>
         </section>
