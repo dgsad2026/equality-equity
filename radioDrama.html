@@ -4,7 +4,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equality & Equity - Radio Drama Showcase</title>
+    <title>Radio Drama - Equality & Equity</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -202,7 +203,7 @@
     <div id="curtain-left" class="curtain"></div>
     <div id="curtain-right" class="curtain"></div>
 
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 flex justify-center py-6 transition-opacity duration-500">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 flex justify-center py-6 transition-opacity duration-500">    
         <div class="hidden md:flex space-x-8 md:space-x-16 items-center">
             <a href="index.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-transparent pb-1">Home</a>
             <a href="radioDrama.html" class="nav-font text-xs md:text-sm tracking-widest text-[#f7f2ee] hover:text-[#d4af37] transition-colors uppercase border-b border-[#d4af37] pb-1">Radio Drama</a>
@@ -230,7 +231,7 @@
             </svg>
         </button>
         <a href="index.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Home</a>
-        <a href="radioDrama.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Radio Drama</a>
+        <a href="radioDrama.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase border-b border-[#d4af37]">Radio Drama</a>
         <a href="awards.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Awards</a>
         <a href="dramaNight.html" class="nav-font text-center tracking-widest text-[#f7f2ee] hover:text-[#d4af37] uppercase">Drama Night</a>
         <a href="https://forms.gle/WDMBSoFoDs7e1p7t6" target="_blank" rel="noopener noreferrer" class="vote-btn-glow relative overflow-hidden border border-[#d4af37] px-8 py-3 text-[#d4af37] nav-font tracking-widest uppercase transition-all mt-4">
@@ -244,28 +245,11 @@
     <main class="relative z-20">
         
         <section id="sec-1" class="min-h-screen flex flex-col items-center justify-center p-8 scroll-section">
-            <h1 class="text-3xl md:text-5xl font-bold tracking-widest text-center theme-text leading-tight opacity-0 translate-y-10 transition-all duration-1000 delay-300" id="hero-title">
+            <img id="hero-logo" src="assets/logo.png" alt="Showcase Logo" class="h-60 md:h-80 w-auto mb-2 opacity-0 translate-y-5 transition-all duration-1000 delay-100 sec-content">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-widest text-center theme-text leading-tight opacity-0 translate-y-5 transition-all duration-1000 delay-100 sec-content" id="hero-title">
                 RADIO DRAMA SHOWCASE
             </h1>
-            <p class="mt-8 text md:text-xl theme-text subtitle-font max-w-2xl text-center opacity-0 transition-all duration-1000 delay-700 hidden md:flex flex-wrap justify-center items-center gap-4" id="hero-sub">
-                <span>Putonghua</span>
-                <svg class="star-logo w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
-                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
-                </svg>
-                <span>Cantonese</span>
-                <svg class="star-logo w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
-                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
-                </svg>                
-                <span>Musical</span>
-                <svg class="star-logo w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
-                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
-                </svg>
-                <span>English 1</span>
-                <svg class="star-logo w-4 h-4 fill-[#d4af37]" viewBox="0 0 24 24">
-                    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
-                </svg>
-                <span>English 2</span>
-            </p>
+            <div class="h-0.5 w-16 md:w-24 bg-[#d4af37] mx-auto mt-4 transition-all duration-1000 delay-100 transform scale-x-0 origin-center sec-line"></div>
         </section>
 
         <!-- Putonghua -->
@@ -277,10 +261,16 @@
                 <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
                 <div class="flex flex-col gap-3 transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content">
                     <h3 class="text-2xl md:text-2xl theme-text">
-                        主題
+                        真假千金之覺醒後聯手炸系統
                     </h3>
-                    <p class="text md:text-lg leading-relaxed theme-text max-w-lg text-justify text-[#f7f2ee]/80 font-light">
-                        (150字) 杉際様際善長索授有畿周江野。変季雪況済一検著大者子全付金支。専遊信模経性者奈児数効基俊各。用幌光装護美新表井戻士事豊所社三期食政。車午茶著替録票料回閲新全図月無係声球工視。一細直断周同独藤集変身回勝。百同禁較林座枯製展件刈事桐属問季自芸歳。料突集海択年春住規幕視絡窓格府。方叙提図断全体兄付渡一気耗。
+                    <p class="text md:text-lg leading-relaxed theme-text max-w-xl text-justify text-[#f7f2ee]/80 font-light">
+                        寧為心中之玉覺醒，不為虛假之名苟同。
+                        <br>
+                        在冰冷的實驗場，真假千金被強制投入競爭。但一首童謠、一張照片、一塊玉牌，讓她們發現血脈中相連的紅線。當抹去的記憶被拼湊，真相浮現——她們的一切，都在他人操控之中。
+                        <br>
+                        若大道被掩蓋，你會任由他人掌控，在不公中苟活，還是奪回追求心中之美的權利？
+                        <br>
+                        而她們，又將作出怎樣的選擇？
                     </p>
                 </div>
             </div>
@@ -288,7 +278,7 @@
             <div class="w-full md:flex-1 flex justify-center">
                 <div class="video-placeholder">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/yd5megy2CbI" 
                         title="普通話組" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -303,7 +293,7 @@
             <div class="w-full md:flex-1 flex justify-center">
                 <div class="video-placeholder">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/A3t0Raps-4s" 
                         title="廣東話組" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -319,10 +309,10 @@
                 <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
                 <div class="flex flex-col gap-3 transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content">
                     <h3 class="text-2xl md:text-2xl theme-text">
-                        主題
+                        面具
                     </h3>
-                    <p class="text md:text-lg leading-relaxed theme-text max-w-lg text-justify text-[#f7f2ee]/80 font-light">
-                        (150字) 杉際様際善長索授有畿周江野。変季雪況済一検著大者子全付金支。専遊信模経性者奈児数効基俊各。用幌光装護美新表井戻士事豊所社三期食政。車午茶著替録票料回閲新全図月無係声球工視。一細直断周同独藤集変身回勝。百同禁較林座枯製展件刈事桐属問季自芸歳。料突集海択年春住規幕視絡窓格府。方叙提図断全体兄付渡一気耗。
+                    <p class="text md:text-lg leading-relaxed theme-text max-w-xl text-justify text-[#f7f2ee]/80 font-light">
+                        無盡循環的封閉空間裡，面具成為人人必備的束縛，冰冷監控屏映照著虛妄的平等秩序。主角在重複的死亡與掙扎中執著前行，觸及空間深處的秘密房間。當自我與另一個守護者相遇，關於差異、救贖與束縛的真相逐漸翻涌，所謂的保護，終將在直面真實的時刻迎來終結。
                     </p>
                 </div>
             </div>
@@ -337,10 +327,10 @@
                 <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
                 <div class="flex flex-col gap-3 transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content">
                     <h3 class="text-2xl theme-text">
-                        Title
+                        When Glass Is Stained With Colour
                     </h3>
-                    <p class="text md:text-lg leading-relaxed theme-text max-w-lg text-justify text-[#f7f2ee]/80 font-light">
-                        (100 word description) Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    <p class="text md:text-lg leading-relaxed theme-text max-w-xl text-justify text-[#f7f2ee]/80 font-light">
+                        Somewhere along the coast of a quaint country, magic pills that can even out talents have been granted to a town’s council. As people discuss whether it is ethical, these mutterings soon reach the ears of a class of students. Christine, a young girl who believes she has nothing to offer to society, welcomes this change, but as a glassblower takes her on a musical journey together with her newfound friends Elle and Sophie, they find that perhaps there are sparks of talent waiting to be discovered in them after all—Will they find a harmonising cadence to the dissonance?
                     </p>
                 </div>
             </div>
@@ -363,7 +353,7 @@
             <div class="w-full md:flex-1 flex justify-center">
                 <div class="video-placeholder">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/4KRMiAsDYik" 
                         title="English 1" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -379,10 +369,10 @@
                 <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
                 <div class="flex flex-col gap-3 transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content">
                     <h3 class="text-2xl md:text-2xl theme-text">
-                        Title
+                        A Trial in Stone
                     </h3>
-                    <p class="text md:text-lg leading-relaxed theme-text max-w-lg text-justify text-[#f7f2ee]/80 font-light">
-                        (100 word description) Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    <p class="text md:text-lg leading-relaxed theme-text max-w-xl text-justify text-[#f7f2ee]/80 font-light">
+                        In this retelling of a traditional Greco-Roman myth, the Gorgon Medusa’s tale does not end in death. Instead, driven by a hunger to right the wrongs done against her, she refuses to enter into the Underworld, upsetting the very balance of the cosmos in the process. Now, faced with the undeniable plea of equity, the gods—or one particular god—must defend her honour in the divine court. Will the scales of equity finally balance out, and the results of this trial be set in stone?
                     </p>
                 </div>
             </div>
@@ -397,10 +387,10 @@
                 <div class="h-1 w-24 bg-[#d4af37] transition-all duration-700 delay-100 transform scale-x-0 origin-left sec-line"></div>
                 <div class="flex flex-col gap-3 transform transition-all duration-700 delay-200 translate-y-5 opacity-0 sec-content">
                     <h3 class="text-2xl theme-text">
-                        Title
+                        Same Sky, Different Wings
                     </h3>
-                    <p class="text md:text-lg leading-relaxed theme-text max-w-lg text-justify text-[#f7f2ee]/80 font-light">
-                        (100 word description) Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    <p class="text md:text-lg leading-relaxed theme-text max-w-xl text-justify text-[#f7f2ee]/80 font-light">
+                        Emma believes in one rule: the same clock for everyone. Outraged when her disabled classmate, Sophia, is granted extra time, Emma’s rigid world is shattered by a mystical transformation. Now a slow-moving turtle while Sophia soars as a hawk, Emma is trapped in a world where "equal" rules are a death sentence. To survive the treacherous forest, she must face a gut-wrenching truth: is fairness about the speed of the race, or the height of the hurdle?
                     </p>
                 </div>
             </div>
@@ -408,7 +398,7 @@
             <div class="w-full md:flex-1 flex justify-center">
                 <div class="video-placeholder">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        src="https://www.youtube.com/embed/Q749Bx_KLq0"
                         title="English 2"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -490,8 +480,9 @@
             });
 
             setTimeout(() => {
-                document.getElementById('hero-title').classList.remove('opacity-0', 'translate-y-10');
-                document.getElementById('hero-sub').classList.remove('opacity-0');
+                document.getElementById('hero-title').classList.remove('opacity-0', 'translate-y-5');
+                const heroSub = document.getElementById('hero-sub');
+                if (heroSub) heroSub.classList.remove('opacity-0');
             }, 100);
 
             const observerOptions = { threshold: 0.2 };
